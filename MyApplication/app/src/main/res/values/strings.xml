@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LastEssai</string>
+    <string name="facebook_app_id">157830091568927</string>
+    <string name="fb_login_protocol_scheme">fb157830091568927</string>
+    <string name="button_accessMap">Find a restaurant</string>
+    <string name="textView_name">ShareFood</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="take_photo">Take photo</string>
+    <string name="filter">Filter</string>
+    <string name="title_main_activity">Main Activity</string>
+</resources>

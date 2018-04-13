@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:context=".MapsActivity" />
+
+    <Button
+        android:id="@+id/B_nearby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="11dp"
+        android:onClick="onClick"
+        android:text="Nearby" />
+
+    <Button
+        android:id="@+id/B_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/B_nearby"
+        android:layout_alignBottom="@+id/B_nearby"
+        android:layout_marginLeft="69dp"
+        android:layout_marginStart="69dp"
+        android:layout_toEndOf="@+id/B_nearby"
+        android:layout_toRightOf="@+id/B_nearby"
+        android:onClick="onClick"
+        android:text="Google Maps" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/buttonCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="42dp"
+        android:layout_marginEnd="29dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@color/colorPrimary"
+        app:rippleColor="@color/colorPrimary"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="29dp" />
+
+
+</RelativeLayout>
